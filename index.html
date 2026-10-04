@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To do list</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="toDo">
+        <h1 id="head">My Task</h1>
+
+        <div class="row">
+          <input
+            type="text"
+            id="inputTask"
+            placeholder="Tambahkan to do list"
+          />
+
+          <button id="tombol">Tambah</button>
+        </div>
+
+        <div class="list-container">
+          <h3>Total Tugas (<span id="jumlah-catatan">0</span>):</h3>
+
+          <p id="pesan-kosong" class="empty-state">
+            Belum ada catatan. Silakan tambah catatan baru!
+          </p>
+
+          <ul id="listContainer"></ul>
+        </div>
+
+        <div class="tugas-selesai">
+          <h3>Selesai (<span id="total-selesai">0</span>)</h3>
+        </div>
+
+        <div class="tugas-belumselesai">
+          <h3>Belum Selesai (<span id="total-belum">0</span>)</h3>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
